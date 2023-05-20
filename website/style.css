@@ -1,0 +1,126 @@
+html,
+body {
+    background-image: url("bg.jpg");
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-areas: "header header"
+                         "form entryHolder";
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+
+.title {
+    text-align: center;
+    margin: auto;
+    color: darkblue;
+}
+
+.headline {
+    grid-area: header;
+    font-size: 3em;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+}
+
+.form {
+    grid-area: form;
+    font-size: 2em;
+    height: 100%;
+    padding: 1em;
+    margin: auto;
+}
+
+.entryHolder-container {
+    grid-area: entryHolder;
+    font-size: 2em;
+    height: 100%;
+    padding: 1em;
+    margin: auto;
+}
+
+#entryHolder {
+    font-size: 16px;
+}
+
+.feelings-container,
+.zip-container {
+    padding: 0.5em;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1em;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 200px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-size: 24px;
+    margin: auto;
+}
+
+input {
+    display: block;
+    color: #2d3547;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 0.2em;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+button {
+    background: darkblue;
+    color: white;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+textarea {
+    display: block;
+    color: #2d3547;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    resize: none;
+    padding: 0.2em;
+    margin: 0.5em auto;
+}
+
+@media (max-width: 768px) {
+    #app {
+        grid-template-areas:"header"
+                            "entryHolder"
+                            "form";
+        grid-template-columns: 1fr;
+    }
+}
