@@ -1,5 +1,5 @@
-// open weather api key
-const APIKEY = '9d30bb2e6d04d8203c1cc916ebb3940b';
+// place your open weather api key here
+const APIKEY = '';
 
 // make post call to server /projectData to save
 async function postData(url, data) {
