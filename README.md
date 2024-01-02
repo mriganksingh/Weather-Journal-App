@@ -1,5 +1,5 @@
 
-# Project Title
+# Weather-Journal-App
 
 A weather application which fetches data based upon zip code and records latest user feelings on weather.
 
